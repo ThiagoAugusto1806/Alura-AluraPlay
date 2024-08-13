@@ -1,9 +1,39 @@
+/* ESTILOS DO HEADER */
+
+ .cabecalho {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    padding: 0 25px;
+    z-index: 2;
+}
+
+.logo {
+    background-image: url(../img/cabecalho/Logo.png);
+    background-repeat: no-repeat;
+    padding: 15px 65px;
+    cursor: pointer;
+}
+
+
+.cabecalho__videos {
+    background-image: url(../img/cabecalho/video_call.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+} 
+
 .container {
     display: grid;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
+
+/* Container Formulario */
 
 .container__formulario {
     margin: 3em 0;

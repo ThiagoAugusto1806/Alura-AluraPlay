@@ -1,6 +1,6 @@
 async function listaVideos() {
   const conexao = await fetch(
-    "https://my-json-server.typicode.com/ThiagoAugusto1806/AluraPlay-API/videos"
+    "https://alura-play-api.vercel.app/videos"
   );
   const conexaoConvertida = await conexao.json();
 
@@ -9,7 +9,7 @@ async function listaVideos() {
 
 async function criaVideo(titulo, descricao, url, imagem) {
   const conexao = await fetch(
-    "https://my-json-server.typicode.com/ThiagoAugusto1806/AluraPlay-API/videos",
+    "https://alura-play-api.vercel.app/videos",
     {
       method: "POST",
       headers: {
@@ -33,7 +33,7 @@ async function criaVideo(titulo, descricao, url, imagem) {
 async function buscaVideo(termoDeBusca) {
   console.log(termoDeBusca);
   const conexao = await fetch(
-    `https://my-json-server.typicode.com/ThiagoAugusto1806/AluraPlay-API/videos?q=${termoDeBusca}`
+    `https://alura-play-api.vercel.app/videos?q=${termoDeBusca}`
   );
   console.log(conexao);
   const conexaoConvertida = await conexao.json();
